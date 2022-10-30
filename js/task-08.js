@@ -20,7 +20,9 @@ function handleSubmit(event) {
     alert(
       "Save the forests and put your e-mail and password!\n Do not leave empty fields. Empty fields make our SQL team cry and they waste paper tissues made of threes. \n Be empathetic, do not do this to them!"
     );
+    return
   }
+  
   console.log(new User(email.value, pswrd.value));
   form.reset();
 }
